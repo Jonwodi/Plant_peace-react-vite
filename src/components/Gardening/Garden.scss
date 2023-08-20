@@ -1,0 +1,116 @@
+.garden {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
+      font-size: 50px;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  &__cardSection {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    ul {
+      background-color: #f0f1ee;
+      width: fit-content;
+
+      padding: 20px;
+
+      list-style: none;
+      margin: 0;
+
+      img {
+        height: 350px;
+      }
+
+      .header {
+        width: 200px;
+        color: #354733;
+      }
+
+      .price {
+        margin-top: 10px;
+        color: #1e1e24;
+      }
+    }
+  }
+
+  &__subscribe {
+    background-image: url(../../assets/gardeningFooter.svg);
+    background-repeat: no-repeat;
+
+    margin-top: 100px;
+
+    width: 1000px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px;
+
+    .GreenCard {
+      background-color: rgba($color: #8a9b6e, $alpha: 0.5);
+      width: fit-content;
+      color: white;
+
+      padding: 50px;
+
+      &__header {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+
+        :first-child {
+          font-size: 50px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      &__enlist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        margin-top: 20px;
+
+        input {
+          width: 60%;
+          height: 40px;
+          padding-left: 20px;
+        }
+
+        button {
+          background-color: #354733;
+          border: none;
+          color: white;
+          padding: 15px;
+          width: 150px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

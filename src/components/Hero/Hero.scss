@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  align-items: center;
+
+  background-color: #f0f1ee;
+  padding-left: 150px;
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+  position: relative;
+
+  gap: 68px;
+
+  &__main {
+    padding-bottom: 0;
+
+    h3 {
+      font-family: fantasy;
+      font-size: 15px;
+      color: #000000;
+    }
+
+    &--leftInfo {
+      max-width: 540px;
+
+      h2 {
+        letter-spacing: 2px;
+        font-size: 50px;
+        color: #364633;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        color: #808276;
+        line-height: 26px;
+      }
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      width: 180px;
+      background-color: #354733;
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    &--gardening {
+      height: 190px;
+
+      .mainImage {
+        filter: grayscale(100%);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        gap: 5px;
+
+        transform: translate(0px, -600px);
+
+        color: #354733;
+        font-size: small;
+
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    height: 800px;
+    transform: translate(-200px);
+
+    right: 0;
+
+    filter: grayscale(100%);
+  }
+}

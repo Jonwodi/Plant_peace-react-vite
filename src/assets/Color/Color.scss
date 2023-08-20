@@ -1,0 +1,38 @@
+.colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 50px;
+
+    li {
+      color: white;
+
+      width: 200px;
+      height: 200px;
+
+      border: 1px black solid;
+
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    :first-child {
+      background-color: #8a9c6e;
+    }
+
+    :last-child {
+      background-color: #364633;
+    }
+  }
+}
